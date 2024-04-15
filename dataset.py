@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('dataset/car_new.csv')
+df = pd.read_csv('car_new.csv')
 print(df.head)
 df['mileage'] = df['mileage'].replace(' kmpl', '', regex=True).astype(float)
 df['max_power'] = df['max_power'].replace(' bhp', '', regex=True).astype(float)
